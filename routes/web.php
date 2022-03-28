@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\ProdukAdminController;
 
+use App\Http\Controllers\User\HomeUserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,4 +25,10 @@ Route::prefix('admin')->group(function () {
     Route::prefix('produk')->name('produk.')->group(function () {
         Route::get('/', [ProdukAdminController::class, 'index'])->name('index');
     });
+});
+
+Route::prefix('/')->group(function () {
+    Route::prefix('/')->name('home.')->group(function () {
+        Route::get('/', [HomeUserController::class, 'index'])->name('index');
+    }); 
 });
