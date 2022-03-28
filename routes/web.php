@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\ProdukAdminController;
+use App\Http\Controllers\Admin\LoginAdminController;
 
 use App\Http\Controllers\User\HomeUserController;
 
@@ -17,6 +18,11 @@ use App\Http\Controllers\User\HomeUserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('loginadmin', [LoginAdminController::class, 'loginadmin'])->name('loginadmin');
+Route::post('proses_loginadmin', [LoginAdminController::class, 'proses_loginadmin'])->name('proses_loginadmin');
+
+Route::get('logoutadmin', [LoginAdminController::class, 'logoutadmin'])->name('logoutadmin');
 
 Route::prefix('admin')->group(function () {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {

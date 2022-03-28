@@ -8,7 +8,7 @@
             <div class="card mb-4 p-4">
                 <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                     <li class="breadcrumb-item text-sm"><a class="opacity-5 " href="javascript:;">Pages</a></li>
-                    <li class="breadcrumb-item text-sm active" aria-current="page">Data Produk</li>
+                    <li class="breadcrumb-item text-sm active" aria-current="page">Data User</li>
                 </ol>
                 <div class="card-header pb-0">
                 <h4>Data Produk</h4>
@@ -19,10 +19,9 @@
                         <thead>
                             <tr>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Produk</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Gambar Produk</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama User</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email User</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No HP</th>
                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
                             </tr>

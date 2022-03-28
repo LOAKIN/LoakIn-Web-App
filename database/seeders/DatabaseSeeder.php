@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use App\Models\Admin;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +15,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $user = [
+            [
+                'name'      => 'admin',
+                'username'     => 'admin@admin.com',
+                'password'  => bcrypt('12345'),
+            ]
+        ];
+
+        foreach ($user as $key => $value) {
+            Admin::create($value);
+        }
     }
 }
