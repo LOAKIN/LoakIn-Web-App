@@ -18,45 +18,41 @@
                         <table class="table align-items-center mb-0">
                         <thead>
                             <tr>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Produk</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Gambar Produk</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Produk</th>
                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Harga</th>
                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php
+                                $no = 0;
+                            ?>
+                            @foreach($produk as $pr)
+                            <?php
+                                $no += 1;
+                            ?>
                             <tr>
-                            <td>
-                                <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">John Michael</h6>
-                                    <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                                </div>
-                                </div>
+                            <td class="align-middle text-center">
+                                {{$no}}
                             </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">Manager</p>
-                                <p class="text-xs text-secondary mb-0">Organization</p>
+                            <td  class="align-middle text-center">
+                                {{$pr->nama_produk}}
                             </td>
                             <td class="align-middle text-center text-sm">
-                                <span class="badge badge-sm bg-gradient-success">Online</span>
+                            {{$pr->stok_produk}}
                             </td>
                             <td class="align-middle text-center">
-                                <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                                {{$pr->harga}}
                             </td>
-                            <td class="align-middle">
-                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                                </a>
+                            <td class="align-middle text-center"> 
+                                <a href="" class="btn btn-info" ><i class="fa fa-info" aria-hidden="true" style="margin-right: 10px;"></i>Detail</a>
+                                <a href="" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true" style="margin-right: 10px;"></i>Ubah</a>
+                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o" aria-hidden="true" style="margin-right: 10px;"></i>Hapus</a>
                             </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                         </table>
                     </div>

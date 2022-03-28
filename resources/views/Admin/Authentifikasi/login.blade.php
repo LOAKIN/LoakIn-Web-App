@@ -20,7 +20,7 @@
                                 <strong>{{ $message }}</strong>
                             </div>
                         @endif
-                        <center><img src="{{asset('loginadmin.png')}}" class="img-fluid mb-4" width="500"  alt=""></center>
+                        <center><img src="{{asset('loginadmin.png')}}" class="img-fluid mb-4" width="400"  alt=""></center>
                         <form action="{{route('proses_loginadmin')}}" method="POST" >
                             {{ csrf_field() }}
 
