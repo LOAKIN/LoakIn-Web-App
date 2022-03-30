@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\User\loginusercontroller;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\DashboardAdminController;
@@ -32,3 +33,5 @@ Route::prefix('/')->group(function () {
         Route::get('/', [HomeUserController::class, 'index'])->name('index');
     }); 
 });
+
+Route::get('loginuser', [loginusercontroller::class, 'loginuser'])->name('loginuser');
