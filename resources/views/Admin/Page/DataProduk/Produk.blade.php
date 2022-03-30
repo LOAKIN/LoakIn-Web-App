@@ -26,11 +26,11 @@
                         <table class="table align-items-center mb-0">
                         <thead>
                             <tr>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Produk</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Harga</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
+                            <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">No</th>
+                            <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">Nama Produk</th>
+                            <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Stok</th>
+                            <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Harga</th>
+                            <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
