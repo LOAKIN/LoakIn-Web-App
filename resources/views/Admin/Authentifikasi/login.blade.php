@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="auth.css">
   <title>Login Admin | Loak In </title>
+  <link rel="icon" type="image/png" href="{{asset('logoatas.png')}}">
 </head>
 
 <body style="background-color: #F58814">

@@ -10,6 +10,14 @@
                     <li class="breadcrumb-item text-sm"><a class="opacity-5 " href="javascript:;">Pages</a></li>
                     <li class="breadcrumb-item text-sm active" aria-current="page">Data Produk</li>
                 </ol>
+                @if ($message = Session::get('success'))
+                    <div class="alert alert-success alert-block mt-4">   
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+                <div class="d-flex justify-content-center mt-2">
+                    <a href="{{ route('produk.create') }}" class="btn btn-outline-light" name="checkout" type="submit" style="background-color:#F58814;font-color:white;width:100%;border-radius:15px; font-size:18px"><b>Add Produk</b></a>
+                </div>
                 <div class="card-header pb-0">
                 <h4>Data Produk</h4>
                 </div>
@@ -47,9 +55,9 @@
                                 {{$pr->harga}}
                             </td>
                             <td class="align-middle text-center"> 
-                                <a href="" class="btn btn-info" ><i class="fa fa-info" aria-hidden="true" style="margin-right: 10px;"></i>Detail</a>
-                                <a href="" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true" style="margin-right: 10px;"></i>Ubah</a>
-                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o" aria-hidden="true" style="margin-right: 10px;"></i>Hapus</a>
+                                <a href="{{route('produk.view', $pr->id)}}" class="btn btn-info" ><i class="fa fa-info" aria-hidden="true" style="margin-right: 10px;"></i>Detail</a>
+                                <a href="{{route('produk.update', $pr->id)}}" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true" style="margin-right: 10px;"></i>Ubah</a>
+                                <a href="{{route('produk.delete', $pr->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o" aria-hidden="true" style="margin-right: 10px;"></i>Hapus</a>
                             </td>
                             </tr>
                             @endforeach

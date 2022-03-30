@@ -30,6 +30,12 @@ Route::prefix('admin')->group(function () {
     });
     Route::prefix('produk')->name('produk.')->group(function () {
         Route::get('/', [ProdukAdminController::class, 'index'])->name('index');
+        Route::get('/create', [ProdukAdminController::class, 'create_view'])->name('create');
+        Route::post('/create', [ProdukAdminController::class, 'create_process'])->name('create.process');
+        Route::get('/view/{id}', [ProdukAdminController::class, 'view'])->name('view');
+        Route::get('/update/{id}', [ProdukAdminController::class, 'update_view'])->name('update');
+        Route::post('/update/{id}', [ProdukAdminController::class, 'update_process'])->name('update.process');
+        Route::get('/delete/{id}', [ProdukAdminController::class, 'delete'])->name('delete');
     });
 });
 
