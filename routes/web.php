@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ProdukAdminController;
 
 use App\Http\Controllers\User\HomeUserController;
 use App\Http\Controllers\User\OrderUserController;
+use App\Http\Controllers\User\CheckoutUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,4 @@ Route::prefix('/')->group(function () {
 });
 
 Route::get('/order', [OrderUserController::class, 'index'])->name('index');
+Route::get('/checkout', [CheckoutUserController::class, 'index'])->name('index');
