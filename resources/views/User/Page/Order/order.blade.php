@@ -20,7 +20,47 @@
                         <td></td>
                         <td><b>Jung Jaehyun</b></td>
                         <td rowspan="2">Jl. Telekomunikasi No. 1, Terusan Buahbatu - Bojongsoang, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</td>
-                        <td><b><a href="#" style="color: #D77409;text-decoration:none">UBAH</a></b></td>
+                        <td><b><a href="" style="color: #D77409;text-decoration:none" data-bs-toggle="modal" data-bs-target="#exampleModal">UBAH</a></b></td>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="color:#D77409">Alamat Baru</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="row g-2 mb-3">
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="nama" placeholder="Nama">
+                                                    <label for="nama">Nama Lengkap</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="nohp" placeholder="021472384">
+                                                    <label for="nohp">Nomor Telepon</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Nama Jalan" id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Nama Jalan, Gedung, No. Rumah</label>
+                                        </div>
+                                        <div>
+                                            <img src="https://developers.google.com/maps/images/landing/hero_maps_static_api.png" class="rounded mx-auto d-block" style="width:25rem">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" style="background-color:#FBCE9D">Close</button>
+                                        <button type="button" class="btn" style="background-color:#F58814;color:white">Save changes</button>
+                                    </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </tr>
                     <tr>
                         <td></td>
