@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\ProdukAdminController;
 
 use App\Http\Controllers\User\HomeUserController;
+use App\Http\Controllers\User\OrderUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,4 @@ Route::prefix('/')->group(function () {
     }); 
 });
 
-Route::get('/order', function () {
-    return view('order');
-});
+Route::get('/order', [OrderUserController::class, 'index'])->name('index');
