@@ -53,9 +53,9 @@
                                             <img src="https://developers.google.com/maps/images/landing/hero_maps_static_api.png" class="rounded mx-auto d-block" style="width:25rem">
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal" style="background-color:#FBCE9D">Close</button>
-                                        <button type="button" class="btn" style="background-color:#F58814;color:white">Save changes</button>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" style="background-color:#FBCE9D;width:8rem">Close</button>
+                                        <button type="button" class="btn" style="background-color:#F58814;color:white;width:8rem">Save changes</button>
                                     </div>
                                     </div>
                                 </form>
