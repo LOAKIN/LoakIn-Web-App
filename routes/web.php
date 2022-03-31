@@ -32,3 +32,7 @@ Route::prefix('/')->group(function () {
         Route::get('/', [HomeUserController::class, 'index'])->name('index');
     }); 
 });
+
+Route::get('/order', function () {
+    return view('order');
+});
