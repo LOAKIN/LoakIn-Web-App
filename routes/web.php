@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\LoginAdminController;
 
 use App\Http\Controllers\Driver\DashboardDriverController;
 use App\Http\Controllers\Driver\LoginDriverController;
+use App\Http\Controllers\Driver\ProfileDriverController;
 
 use App\Http\Controllers\User\HomeUserController;
 
@@ -50,6 +51,10 @@ Route::get('logoutdriver', [LoginDriverController::class, 'logoutdriver'])->name
 Route::prefix('driver')->group(function () {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::get('/', [DashboardDriverController::class, 'index'])->name('index');
+    });
+
+    Route::prefix('profile')->name('profile.')->group(function () {
+        Route::get('/', [ProfileDriverController::class, 'index'])->name('index');
     });
     
 });

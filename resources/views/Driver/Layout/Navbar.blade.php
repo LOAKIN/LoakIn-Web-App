@@ -16,7 +16,7 @@
               
               <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
-                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link" id="profileDropdown" href="{{ route('profile.index') }}" >
                     <div class="nav-profile-img">
                       <img src="{{ asset('fotodriver/' . session()->get('driver')->foto) }}" alt="image" />
                     </div>
