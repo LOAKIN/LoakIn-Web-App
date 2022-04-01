@@ -3,8 +3,7 @@
 @section('content')
             <div class="page-header flex-wrap">
               <div class="header-left">
-                <button class="btn btn-primary mb-2 mb-md-0 mr-2"> Create new document </button>
-                <button class="btn btn-outline-primary mb-2 mb-md-0"> Import documents </button>
+                
               </div>
               <div class="header-right d-flex flex-wrap mt-md-2 mt-lg-0">
                 <div class="d-flex align-items-center">
@@ -15,8 +14,6 @@
                     <p class="m-0">ADE-00234</p>
                   </a>
                 </div>
-                <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text">
-                  <i class="mdi mdi-plus-circle"></i> Add Prodcut </button>
               </div>
             </div>
 

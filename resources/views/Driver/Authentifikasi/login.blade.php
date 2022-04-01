@@ -22,7 +22,7 @@
                             </div>
                         @endif
                         <center><img src="{{asset('loginadmin.png')}}" class="img-fluid mb-4" width="400"  alt=""></center>
-                        <form action="{{route('proses_loginadmin')}}" method="POST" >
+                        <form action="{{route('proses_logindriver')}}" method="POST" >
                             {{ csrf_field() }}
 
                             <h3 class="text-center mb-4" style="color: #F58814">Login</h3>

@@ -18,10 +18,10 @@
                 <li class="nav-item nav-profile dropdown">
                   <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                     <div class="nav-profile-img">
-                      <img src="{{asset('assetsdriver/images/faces/face1.jpg')}}" alt="image" />
+                      <img src="{{ asset('fotodriver/' . session()->get('driver')->foto) }}" alt="image" />
                     </div>
                     <div class="nav-profile-text">
-                      <p class="text-black font-weight-semibold m-0"> Olson jass </p>
+                      <p class="text-black font-weight-semibold m-0"> {{session()->get('driver')->name}} </p>
                     </div>
                   </a>
                 </li>
@@ -54,7 +54,7 @@
                 </a>
               </li>
               <li class="nav-item" style="padding-left: 3%; padding-right: 3%">
-                <a class="nav-link" href="pages/charts/chartjs.html">
+                <a class="nav-link" href="{{ route('logoutdriver') }}">
                   <i class="mdi mdi-logout menu-icon"></i>
                   <span class="menu-title">Logout</span>
                 </a>

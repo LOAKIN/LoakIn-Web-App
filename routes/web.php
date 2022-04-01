@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ProdukAdminController;
 use App\Http\Controllers\Admin\LoginAdminController;
 
 use App\Http\Controllers\Driver\DashboardDriverController;
+use App\Http\Controllers\Driver\LoginDriverController;
 
 use App\Http\Controllers\User\HomeUserController;
 
@@ -40,6 +41,11 @@ Route::prefix('admin')->group(function () {
         Route::get('/delete/{id}', [ProdukAdminController::class, 'delete'])->name('delete');
     });
 });
+
+Route::get('logindriver', [LoginDriverController::class, 'logindriver'])->name('logindriver');
+Route::post('proses_logindriver', [LoginDriverController::class, 'proses_logindriver'])->name('proses_logindriver');
+
+Route::get('logoutdriver', [LoginDriverController::class, 'logoutdriver'])->name('logoutdriver');
 
 Route::prefix('driver')->group(function () {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
