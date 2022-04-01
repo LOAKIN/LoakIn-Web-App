@@ -36,19 +36,19 @@
           <div class="container">
             <ul class="nav page-navigation d-flex justify-content-center">
               <li class="nav-item" style="padding-left: 3%; padding-right: 3%">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('dashboard.index') }}">
                   <i class="mdi mdi-compass-outline menu-icon "></i>
                   <span class="menu-title">Dashboard</span>
                 </a>
               </li>
               <li class="nav-item" style="padding-left: 3%; padding-right: 3%">
-                <a class="nav-link" href="pages/forms/basic_elements.html">
+                <a class="nav-link" href="#">
                   <i class="mdi mdi-clipboard-text menu-icon"></i>
                   <span class="menu-title">Data Pemesanan</span>
                 </a>
               </li>
               <li class="nav-item " style="padding-left: 3%; padding-right: 3%">
-                <a class="nav-link " href="pages/icons/mdi.html">
+                <a class="nav-link " href="#">
                   <i class="mdi mdi-contacts menu-icon"></i>
                   <span class="menu-title">History Pemesanan</span>
                 </a>

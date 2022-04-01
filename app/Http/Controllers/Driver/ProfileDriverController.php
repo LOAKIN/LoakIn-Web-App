@@ -23,4 +23,25 @@ class ProfileDriverController extends Controller
             return redirect()->route('logindriver');    
         }
     }
+
+    public function update(Request $request)
+    {
+        $request->validate([
+            'username'  => 'required',
+            'nama'      => 'required',
+            'alamat'    => 'required',
+            'nomor'     => 'required',
+        ]);
+
+        $user_id = session()->get('driver')->id;
+        $account = Driver::findOrFail($user_id);
+
+        $account->username  = $request->username;
+        $account->name      = $request->nama;
+        $account->alamat    = $request->alamat;
+        $account->nomortelepon     = $request->nomor;
+        $account->save();
+
+        return redirect(route('profile.index'));
+    }
 }

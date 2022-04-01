@@ -11,10 +11,12 @@
                     <p class="m-0 pr-3">Dashboard</p>
                   </a>
                   <a class="pl-3 mr-4" href="#">
-                    <p class="m-0">ADE-00234</p>
+                    <p class="m-0">{{session()->get('driver')->kodedriver}}</p>
                   </a>
                 </div>
               </div>
             </div>
+
+            <h1 class="text-center mb-4">Selamat Datang Driver {{session()->get('driver')->name}}</h1>
 
 @endsection

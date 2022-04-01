@@ -55,6 +55,7 @@ Route::prefix('driver')->group(function () {
 
     Route::prefix('profile')->name('profile.')->group(function () {
         Route::get('/', [ProfileDriverController::class, 'index'])->name('index');
+        Route::post('/update', [ProfileDriverController::class, 'update'])->name('update');
     });
     
 });
