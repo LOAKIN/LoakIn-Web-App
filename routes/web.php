@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\ProdukAdminController;
 use App\Http\Controllers\Admin\LoginAdminController;
 
+use App\Http\Controllers\Driver\DashboardDriverController;
+
 use App\Http\Controllers\User\HomeUserController;
 
 /*
@@ -37,6 +39,13 @@ Route::prefix('admin')->group(function () {
         Route::post('/update/{id}', [ProdukAdminController::class, 'update_process'])->name('update.process');
         Route::get('/delete/{id}', [ProdukAdminController::class, 'delete'])->name('delete');
     });
+});
+
+Route::prefix('driver')->group(function () {
+    Route::prefix('dashboard')->name('dashboard.')->group(function () {
+        Route::get('/', [DashboardDriverController::class, 'index'])->name('index');
+    });
+    
 });
 
 Route::prefix('/')->group(function () {
