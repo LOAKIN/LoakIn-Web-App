@@ -18,44 +18,44 @@
                         <table class="table align-items-center mb-0">
                         <thead>
                             <tr>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama User</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email User</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No HP</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7">No</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7 ps-2">Nama Driver</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7">Username</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7">No HP</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7">Alamat</th>
+                            <th class="text-center text-uppercase text-secondary  text-sm font-weight-bolder opacity-7">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php
+                                $no = 0;
+                            ?>
+                            @foreach($driver as $dr)
+                            <?php
+                                $no += 1;
+                            ?>
                             <tr>
-                            <td>
-                                <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">John Michael</h6>
-                                    <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                                </div>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">Manager</p>
-                                <p class="text-xs text-secondary mb-0">Organization</p>
-                            </td>
-                            <td class="align-middle text-center text-sm">
-                                <span class="badge badge-sm bg-gradient-success">Online</span>
+                            <td class="align-middle text-center">
+                                {{$no}}
                             </td>
                             <td class="align-middle text-center">
-                                <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                                {{$dr->name}}
                             </td>
-                            <td class="align-middle">
-                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                                </a>
+                            <td class="align-middle text-center">
+                                {{$dr->username}}
+                            </td>
+                            <td class="align-middle text-center">
+                                {{$dr->nomortelepon}}
+                            </td>
+                            <td class="align-middle  text-center">
+                                {{$dr->alamat}}   
+                            </td>
+                            <td class="align-middle  text-center">
+                                <a href="" class="btn btn-info" ><i class="fa fa-info" aria-hidden="true" style="margin-right: 10px;"></i>Detail</a>
+                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o" aria-hidden="true" style="margin-right: 10px;"></i>Hapus</a>
                             </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                         </table>
                     </div>

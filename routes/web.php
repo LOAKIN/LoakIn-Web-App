@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\ProdukAdminController;
 use App\Http\Controllers\Admin\LoginAdminController;
+use App\Http\Controllers\Admin\DriverAdminController;
 
 use App\Http\Controllers\Driver\DashboardDriverController;
 use App\Http\Controllers\Driver\LoginDriverController;
@@ -32,6 +33,7 @@ Route::prefix('admin')->group(function () {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::get('/', [DashboardAdminController::class, 'index'])->name('index');
     });
+
     Route::prefix('produk')->name('produk.')->group(function () {
         Route::get('/', [ProdukAdminController::class, 'index'])->name('index');
         Route::get('/create', [ProdukAdminController::class, 'create_view'])->name('create');
@@ -40,6 +42,11 @@ Route::prefix('admin')->group(function () {
         Route::get('/update/{id}', [ProdukAdminController::class, 'update_view'])->name('update');
         Route::post('/update/{id}', [ProdukAdminController::class, 'update_process'])->name('update.process');
         Route::get('/delete/{id}', [ProdukAdminController::class, 'delete'])->name('delete');
+    });
+
+    Route::prefix('driver')->name('driver.')->group(function () {
+        Route::get('/', [DriverAdminController::class, 'index'])->name('index');
+        
     });
 });
 
