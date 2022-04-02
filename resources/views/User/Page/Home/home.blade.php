@@ -9,7 +9,7 @@
             <div class="card card-block" style="width: 300px; height:430px; border-radius: 25px; border-solid:1px; border-color:#D77409;">
               <img src="http://drive.google.com/uc?export=view&id=12HjDeFfTn8KY7fKcinR4pxvHugeqG9hg" alt="foto" width="237px" height="235px" style="padding-left:80px; padding-top:48px">
               <div class="card-body">
-                <p class="card-text" style="font-size:16px; font-family: Nunito; font-weight: 400; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis habitasse imperdiet sagittis, tincidunt aliquet adipiscing. Aliquet lectus iaculis neque morbi odio.</p>
+                <p class="card-text" style="font-size:16px; font-family: Nunito; font-weight: 400; text-align: center;">Order Loak.in merupakan fitur utama dari Loak.in. Fitur ini berguna untuk memanggil tukang loak terdekat. Selain itu, fitur ini bisa digunakan kapan saja dan dimana saja</p>
                 <a class="btn btn-outline-light" style="background-color:#F58814;font-color:white;width:50%;border-radius:25px 25px 25px 25px; width: 182px; left: 336px; font-family: Nunito; margin-left: 40px" href="">ORDER LOAK.IN</a>
               </div> 
             </div>
@@ -19,7 +19,7 @@
             <div class="card card-block" style="width: 300px; height:430px; border-radius: 25px; border-solid:1px; border-color:#D77409;">
               <img src="http://drive.google.com/uc?export=view&id=1ccVV5FSxeuMvm9WxooFvxQqrOs1CTAGm" alt="foto" width="237px" height="235px" style="padding-left:80px; padding-top:48px">
               <div class="card-body">
-                <p class="card-text" style="font-size:16px; font-family: Nunito; font-weight: 400; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis habitasse imperdiet sagittis, tincidunt aliquet adipiscing. Aliquet lectus iaculis neque morbi odio.</p>
+                <p class="card-text" style="font-size:16px; font-family: Nunito; font-weight: 400; text-align: center;">Loak.in Shop merupakan fitur yang berguna untuk pembelian dan penjualan barang bekas yang masih layak pakai ataupun hasil daur ulang barang bekas.</p>
                 <a class="btn btn-outline-light" style="background-color:#F58814;font-color:white;width:50%;border-radius:25px 25px 25px 25px; width: 182px; left: 336px; font-family: Nunito; margin-left: 40px" href="">SHOP NOW</a>
               </div> 
             </div>
