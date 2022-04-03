@@ -32,11 +32,13 @@
     <div class="container py-3 bg-white mt-3" >
         <h3 style="font-family: 'Nunito'; font-style: normal; font-weight: 800; color:#D77409; text-align:center;">ABOUT US</h3>
         <div class="row mt-3">
-          <div class="col-sm-5" style="font-family: 'Nunito'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 29px; margin-top:50px">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget fusce varius enim vitae vitae vitae nunc enim. Vitae in ut morbi tellus mattis cras egestas et ultricies. Semper at sit enim semper cras magna vel id. Felis potenti ultricies sed ullamcorper viverra euismod amet.</p>
-          </div>
-          <div class="col-sm-5">
-              <img src="http://drive.google.com/uc?export=view&id=1n12_GxmVPOxNhzFLoIvty1NkP7ru8BAx" alt="Foto" width="408px" height="206px" style="margin-left:250px;">
+          <div class="col justify-content-center">
+            <img src="http://drive.google.com/uc?export=view&id=1n12_GxmVPOxNhzFLoIvty1NkP7ru8BAx" alt="Foto" width="408px" height="206px" style="margin-left:auto; margin-right:auto; display:block; padding-top:24px ">
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-sm justify-content-center" style="font-family: 'Nunito'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 29px; margin-top:20px; text-align:center;">
+            <p>LOAK.IN merupakan sebuah aplikasi mobile untuk memanggil tukang loak untuk menjual barang bekas. Selain itu, aplikasi LOAK.IN ini juga menyediakan suatu fitur untuk membeli barang bekas yang sudah di daur ulang. Aplikasi ini diciptakan dengan melihat keadaan masyarakat yang sulit untuk menemukan tukang loak dan menyalurkan barang bekas agar dapat didaur ulang.</p>
           </div>
         </div>
     </div>
