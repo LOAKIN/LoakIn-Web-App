@@ -71,7 +71,7 @@
 @section('content')
 
 <div class="container py-3 bg-white" >
-    <img src="http://drive.google.com/uc?export=view&id=1YEMvaFTYusWrjThHEGISvpxN4oUZZ5cx" alt="foto" width="559px" height="70px" style="margin-left:auto; margin-right:auto; display:block; padding-top:24px ">
+  <h2 style="font-family: 'Nunito'; font-style: italic; font-weight:900; color:#D77409; text-align:center; font-size:38px; line-height: 52px; text-shadow: 2px 2px #FDE0C3;">LET'S MAKE A GREEN EARTH! </h2>
         <div class="row mt-4 justify-content-center">
           <div class="col d-flex justify-content-center" style="margin-bottom:20px;" >
             <div class="card card-block" style="width: 300px; height:430px; border-radius: 25px; border-solid:1px; border-color:#D77409;">
