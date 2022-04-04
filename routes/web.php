@@ -12,6 +12,8 @@ use App\Http\Controllers\Driver\LoginDriverController;
 use App\Http\Controllers\Driver\ProfileDriverController;
 
 use App\Http\Controllers\User\HomeUserController;
+use App\Http\Controllers\User\OrderUserController;
+use App\Http\Controllers\User\CheckoutUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,5 +72,13 @@ Route::prefix('driver')->group(function () {
 Route::prefix('/')->group(function () {
     Route::prefix('/')->name('home.')->group(function () {
         Route::get('/', [HomeUserController::class, 'index'])->name('index');
+    }); 
+
+    Route::prefix('/order')->name('order.')->group(function () {
+        Route::get('/', [OrderUserController::class, 'index'])->name('index');
+    }); 
+
+    Route::prefix('/checkout')->name('checkout.')->group(function () {
+        Route::get('/', [CheckoutUserController::class, 'index'])->name('index');
     }); 
 });
