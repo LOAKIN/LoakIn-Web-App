@@ -39,7 +39,7 @@ class LoginDriverController extends Controller
             {
                 session()->put('driver',$driver);
                 //$request->session()->put('username', $request->Username);
-                return redirect(route('dashboard.index'));
+                return redirect(route('driver.index'));
             }
             else if($request->Password!=$driver->password)
             {

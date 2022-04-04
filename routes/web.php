@@ -44,7 +44,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/delete/{id}', [ProdukAdminController::class, 'delete'])->name('delete');
     });
 
-    Route::prefix('driver')->name('driver.')->group(function () {
+    Route::prefix('driverdata')->name('driverdata.')->group(function () {
         Route::get('/', [DriverAdminController::class, 'index'])->name('index');
         
     });
@@ -56,7 +56,7 @@ Route::post('proses_logindriver', [LoginDriverController::class, 'proses_logindr
 Route::get('logoutdriver', [LoginDriverController::class, 'logoutdriver'])->name('logoutdriver');
 
 Route::prefix('driver')->group(function () {
-    Route::prefix('dashboard')->name('dashboard.')->group(function () {
+    Route::prefix('driver')->name('driver.')->group(function () {
         Route::get('/', [DashboardDriverController::class, 'index'])->name('index');
     });
 
